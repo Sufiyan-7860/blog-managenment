@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <style>
+        .span{
+            color: red;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../controller/loginajax.js"></script>
+    <title>Login In</title>
+</head>
+<body>
+    <h3>Login Form</h3>
+    <form action="../controller/loginn.php" method="post" id="loginform">
+        Username:<input type="email" name="email" id="email" value="" ><span>* <?php echo $; ?> </span><br><br>
+        Password:<input type="password" name="pass" id="pass" value=""><br><br>
+        
+        <input type="submit" name="submit" id="submit" value="Login"><br>
+        <input type="checkbox"  name="remember"> Remember me <br>
+
+    <span class="psw">Forgot Password <a href="forgot.php">Click here?</a></span>
+    </form>
+
+</body>
+</html>
+
